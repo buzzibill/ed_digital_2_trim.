@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        header {
+            background-color: #4dc72fc7;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            border: 5px solid #000000b9;
+            padding: 10px;
+        }
+
+        main {
+            background-color: #FFFFFF;
+            color: #17056f;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+
+        .artigo-autor {
+            font-weight: 900;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+
+<body>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+    </header>
+    <main>
+        <article>
+
+          
+            <h2>Meu Primeiro Post!</h2>
+            <p class="artigo-autor">Por: Bill Buzzi</p>
+            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                tecnologia.</p>
+            <button>💓 <span>0</span></button>
+            <button>🤖 <span>0</span></button>
+            <button>👎 <span>0</span></button>
+            </div>
+        </article>
+        <article>
+            <h2> A Filosofia e Origem do Python: Muito Além do Nome 🐍 </h2>
+            <p>Ao contrário do que o logotipo de cobras entrelaçadas sugere, o nome da linguagem de programação Python não foi inspirado no réptil, mas sim no grupo humorístico britânico Monty Python’s Flying Circus. Em dezembro de 1989, o criador da linguagem, Guido van Rossum, buscava um nome curto, único e ligeiramente misterioso para o seu novo projeto de código aberto, que nascia como um passatempo de recesso natalino e sucessor da linguagem ABC. Como ele estava lendo os roteiros publicados da famosa série da BBC da década de 1970, decidiu adotar o nome do grupo para dar uma atmosfera de leveza ao projeto. </p>
+            <p>A influência dessa escolha moldou profundamente a cultura de engenharia e as diretrizes oficiais de desenvolvimento da tecnologia. Na documentação técnica do Python, por exemplo, os desenvolvedores são formalmente incentivados a usar referências aos esquetes do grupo em seus exemplos de código. É por essa razão que, em vez das tradicionais variáveis genéricas como foo e bar amplamente utilizadas em outras linguagens, a comunidade Python adota globalmente os termos spam e eggs. Essa nomenclatura é uma piada direta a um famoso quadro do grupo humorístico sobre um cardápio onde todos os pratos continham carne enlatada SPAM de forma repetitiva e irritante. Curiosamente, essa mesma esquete foi a responsável por batizar o termo "spam" na internet para definir as mensagens eletrônicas indesejadas enviadas em massa.</p>
+            <button>💓 <span>0</span></button>
+            <button>🤖 <span>0</span></button>
+            <button>👎 <span>0</span></button>
+            </div>
+        </article>
+        <div>
+    </main>
+</body>
+<script>
+    const botoes = document.querySelectorAll("button");
+    botoes.forEach(function (botao) {
+        let curtiu = false;
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado() {
+            console.log("fui clicado")
+            let texto = botao.querySelector("span");
+            if (curtiu === false) {
+                texto.textContent++;
+                curtiu = true;
+            } else {
+                texto.textContent--;
+                curtiu = false;
+
+            }
+        }
+    }
+    )
+
+</script>
+
+</html>
+
+
